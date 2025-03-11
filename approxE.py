@@ -20,7 +20,8 @@ if __name__=='__main__':
 		approx_e = (1 + 1/N)**N
 		err = abs(math.e - approx_e)/math.e
 		N = N**2
-		outfile.write('approx e: '+str(approx_e))
+		outfile.write('N: '+str(N))
+		outfile.write(': approx e: '+str(approx_e))
 		outfile.write(' absolute error: '+str(abs(math.e - approx_e)))
 		outfile.write(' relative error: '+str((abs(math.e - approx_e))/math.e)+'\n')
 #               print(err)
